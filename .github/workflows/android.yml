@@ -27,6 +27,4 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew assembleRelease
       - name: List release APK path
-        run: |
-          echo "APK path:"
-          find $GITHUB_WORKSPACE/app/build/outputs/apk/release -name "*.apk"
+        run: echo "APK path: "find $GITHUB_WORKSPACE/app/build/outputs/apk/release -name "*.apk"
